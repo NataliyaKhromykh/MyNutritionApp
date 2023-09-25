@@ -45,9 +45,9 @@ const myNutritSearch = (e) => {
       </div>
 
 
-{myNutrit = Object.values(myNutrit)(element => (
+{myNutrit = Object.values(myNutrit).map (() => 
         <MyNutritionComponent/>
-      ))} 
+)} 
 
     </div>
   );
