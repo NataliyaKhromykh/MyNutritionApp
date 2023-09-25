@@ -10,7 +10,7 @@ const MY_ID = "0766ddc8";
 const MY_KEY = "25132912c7e75ec17ee03f4d197867b3";
 
 const [mySearch, setMySearch] = useState("");
-const [myNutrit, setMyNutrit] = useState([]);
+const [myNutrit, setMyNutrit] = useState();
 
 useEffect(() => {
   const getNutrit = async () => {
@@ -44,9 +44,10 @@ const myNutritSearch = (e) => {
           </button>
       </div>
 
-      {myNutrit.map(element => (
+
+{myNutrit = Object.values(myNutrit)(element => (
         <MyNutritionComponent/>
-      ))}
+      ))} 
 
     </div>
   );
